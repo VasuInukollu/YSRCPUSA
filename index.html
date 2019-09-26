@@ -47,6 +47,15 @@
         display: none !important
       }
     }
+
+    @media screen and (max-width:900px) {
+      .team-box {
+        width: 100%;
+        float: left;
+        max-width: 175px;
+        overflow: auto;
+      }
+    }
   </style>
 </head>
 
@@ -120,6 +129,24 @@
       <!-- breakpoint for menu end -->
       <ul class="slides">
         <li class="flex-active-slide" data-thumb-alt=""
+          style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+          <img src="images/Nav.jpg" alt="" draggable="false">
+          <!-- <div class="flex-caption flex-caption1">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6" style="margin-top:-50px">
+                  <h2 class="caption-subheadline">
+                    Addressing the Delegation
+                  </h2>
+                  <h1 class="caption-headline">
+                    Hon' CM in U.S.A
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </li>
+        <li data-thumb-alt=""
           style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
           <img src="images/slider1.jpg" alt="" draggable="false">
           <div class="flex-caption flex-caption1">
@@ -532,6 +559,7 @@
   </div>
   <!--team-->
   <div class="container">
+
     <div class="wrapper100percent">
       <div class="gallery row js-flickity flickity-enabled is-draggable" data-flickity-options='{ 
        contain: true, 
@@ -542,10 +570,6 @@
        wrapAround: false
         }' tabindex="0">
 
-
-
-
-śś
 
         <div class="flickity-viewport" style="height: 485.5px;">
           <div class="flickity-slider" style="left: 0px; transform: translateX(0%);">
