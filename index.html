@@ -19,6 +19,56 @@
   <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
   <style>
+    .ap_logo {
+      width: 90px;
+      margin-top: -20px;
+    }
+
+    .logo_text {
+      color: #c0392b;
+      font-size: 34px;
+      position: absolute;
+      top: 41px;
+      left: 110px;
+      font-weight: 300;
+    }
+
+    @media screen and (max-width:640px) {
+      .ap_logo {
+        font-size: 18px;
+        position: absolute;
+        top: 30px;
+        left: -16px;
+        font-weight: 300;
+      }
+
+      /* #toggle-icon {
+    position: relative;
+    width: 36px;} */
+      .logo_text {
+
+        font-size: 17px;
+        position: absolute;
+        top: 41px;
+        left: 65px;
+        font-weight: 300;
+      }
+
+      .flex-direction-nav .flex-prev,
+      .flex-direction-nav .flex-next {
+        display: none !important
+      }
+
+      .wrapper100percent {
+        display: none;
+      }
+
+      .view {
+        margin-bottom: 10px;
+      }
+
+    }
+
     body {
       font-family: "domine", Arial, sans-serif !important
     }
@@ -40,6 +90,10 @@
       .flex-control-nav {
         display: none !important
       }
+
+      .view {
+        margin-bottom: 10px;
+      }
     }
 
     @media screen and (min-width:770px) {
@@ -56,7 +110,13 @@
         overflow: auto;
       }
     }
-    .view{height:106px !important;}
+
+    @media screen and (min-width:900px) {
+      .view {
+        height: 106px !important;
+      }
+
+    }
   </style>
 </head>
 
@@ -88,9 +148,8 @@
               <div class="responsive-wrapper">
                 <a class="navbar-brand" href="#">
 
-                  <img src="images/aplogo.png" alt="" style="width: 90px; margin-top: -20px;">
-                  <span
-                    style="color: #c0392b; font-size: 34px; position: absolute;top: 41px;left: 110px; font-weight: 300">
+                  <img src="images/aplogo.png" alt="" class="ap_logo">
+                  <span class="logo_text">
                     &nbsp; Spl. Rep. to America
                   </span>
                 </a>
@@ -213,9 +272,11 @@
     <div class="main-boxes">
       <div class="one-box1">
         <div class="one-box1-inner">
-          <h3>నవరత్నాలు గురించి మరింత సమాచారం కోసం <a href="#"><br>
-            Click Here
-          </a> </h3>
+          <h3>నవరత్నాలు గురించి మరింత సమాచారం కోసం
+          </h3>
+          <br>
+          <a href="index.html#" class="button1 firstcolor small whiteborder"> Click Here <i
+              class="fa fa-angle-right icon"></i></a>
         </div>
       </div>
       <div class="one-box2">
@@ -529,13 +590,16 @@
           <div class="flickity-slider">
             <div class="col-lg-12 onelist" style="position: absolute; left: 0%;">
               <!-- <h2>Candidates</h2> -->
-              <h3>Honourable chief minister. Sri Y.S Jagan Mohan Reddy garu Cites Strong US Partnership As Key Element Of AP’s</h3>
+              <h3>Honourable chief minister. Sri Y.S Jagan Mohan Reddy garu Cites Strong US Partnership As Key Element
+                Of AP’s</h3>
               <br>
               <p>Rob Schroder, Senior Vice President, International Affairs,
                 US Chamber of Commerce was upbeat on Andhra Pradesh’s promise of rapid economic growth and appreciated
-                Honourable chief minister. Sri Y.S Jagan Mohan Reddy’s impressive mandate for unlocking the expansive growth potential of
+                Honourable chief minister. Sri Y.S Jagan Mohan Reddy’s impressive mandate for unlocking the expansive
+                growth potential of
                 Andhra Pradesh. With a strong mandate from the people of Andhra Pradesh,
-                Honourable chief minister. Sri Y.S Jagan Mohan Reddy garu will have an opportunity to usher in a era of inclusive growth, rapid
+                Honourable chief minister. Sri Y.S Jagan Mohan Reddy garu will have an opportunity to usher in a era of
+                inclusive growth, rapid
                 development and strategic leadership for Andhra Pradesh.
               </p>
               <br>
@@ -824,7 +888,7 @@
       </div>
       <div class="col-md-2">
         <figure class="view view-first">
-          <img src="images/gallery/gal2.jpg" alt="">
+          <img src="images/gallery/g2.jpg" alt="">
           <figcaption class="mask">
             <div class="maskinner">
               <a href="images/gallery/g2.jpg" class="imagepopup cboxElement">
@@ -869,7 +933,7 @@
       </div>
       <div class="col-md-2">
         <figure class="view view-first">
-          <img src="images/gallery/gal5.jpg" alt="">
+          <img src="images/gallery/g5.jpg" alt="">
           <figcaption class="mask">
             <div class="maskinner">
               <a href="images/gallery/g5.jpg" class="imagepopup cboxElement">
@@ -903,7 +967,7 @@
     <div class="row">
       <div class="col-md-2">
         <figure class="view view-first">
-          <img src="images/gallery/gal7.jpg" alt="">
+          <img src="images/gallery/g7.jpg" alt="">
           <figcaption class="mask">
             <div class="maskinner">
               <a href="images/gallery/g7.jpg" class="imagepopup cboxElement">
@@ -948,7 +1012,7 @@
       </div>
       <div class="col-md-2">
         <figure class=" view view-first">
-          <img src="images/gallery/gal10.jpg" alt="">
+          <img src="images/gallery/g10.jpg" alt="">
           <figcaption class="mask">
             <div class="maskinner">
               <a href="images/gallery/g10.jpg" class="imagepopup cboxElement">
@@ -978,10 +1042,10 @@
       </div>
       <div class="col-md-2">
         <figure class=" view view-first">
-          <img src="images/gallery/gal12.jpg" alt="">
+          <img src="images/gallery/g14.jpg" alt="">
           <figcaption class="mask">
             <div class="maskinner">
-              <a href="images/gallery/g12.jpg" class="imagepopup cboxElement">
+              <a href="images/gallery/g14.jpg" class="imagepopup cboxElement">
                 <i class="fa fa-search-plus"></i>
               </a>
               <!-- <a href="#">
@@ -1032,11 +1096,13 @@
                   <div class="testimonial">
                     <img src="images/rtnkar.jpg" alt="">
                     <i class="fa fa-quote-left"></i>
-                    <h4> My sincere thanks to our Honourable Chief Minister. Sri Y.S Jagan Mohan Reddy garu, No words to express My Love on
+                    <h4> My sincere thanks to our Honourable Chief Minister. Sri Y.S Jagan Mohan Reddy garu, No words to
+                      express My Love on
                       you ,No matter what, Till my Final Breath I wil be your Supporter and I'm proud of it! Once Again
                       ...
                     </h4>
-                    <h6> Rathnakar R Pandugayala, &nbsp; Andhra Pradesh Government special representative to North America
+                    <h6> Rathnakar R Pandugayala, &nbsp; Andhra Pradesh Government special representative to North
+                      America
                     </h6>
                   </div>
                 </div>
@@ -1162,7 +1228,8 @@
         <div class="col-md-4">
           <h5>about</h5>
           <p>
-            Ardent follower of our great leaders Dr. Y.S.Rajasekhar Reddy garu & our Honourable chief minister. Sri Y.S.Jagan Mohan Reddy garu
+            Ardent follower of our great leaders Dr. Y.S.Rajasekhar Reddy garu & our Honourable chief minister. Sri
+            Y.S.Jagan Mohan Reddy garu
           </p>
           <h5>more</h5>
           <ul>
@@ -1183,7 +1250,7 @@
               Address: 23 Highpoint Commons, Marlborough, CT-06447
             </li>
             <li>
-                United States of America
+              United States of America
             </li>
             <li>
               email: Kadapa.Rathnakar@gmail.com
@@ -1199,7 +1266,8 @@
         <div class="col-md-12">
           <ul class="socialicons">
             <li>
-              <a href="https://www.facebook.com/kadaparathnakarYSRCP/" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.facebook.com/kadaparathnakarYSRCP/" target="_blank"><i
+                  class="fa fa-facebook"></i></a>
             </li>
             <li>
               <a href="index.html"><i class="fa fa-twitter"></i></a>
