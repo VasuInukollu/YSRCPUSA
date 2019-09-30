@@ -194,10 +194,10 @@
                   <ul class="nav navbar-nav pull-right">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">News</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#news">News</a></li>
 
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
                   </ul>
                 </div>
@@ -218,11 +218,6 @@
       </div>
       <!-- breakpoint for menu end -->
       <ul class="slides">
-
-        <li class="flex-active-slide" data-thumb-alt=""
-          style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
-          <img src="images/Nav.jpg" alt="" draggable="false">
-        </li>
 
         <li class="flex-active-slide" data-thumb-alt=""
           style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
@@ -783,7 +778,7 @@
   <!--blog news end-->
 
   <!--cta-->
-  <div class="section8">
+  <div class="section8" id="news">
     <div class="section8image">
     </div>
     <div class="section8text">
@@ -1051,7 +1046,7 @@
   </div>
   <div class="divider-space">
   </div>
-  <div class="container">
+  <div class="container" id="events">
     <div class="row">
       <div class="col-lg-12">
         <div class="divider-line">
@@ -1394,7 +1389,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="section9">
-          <div class="section9a">
+          <div class="section9a" id="contact">
             <h2>Subscribe on mailing list</h2>
             Subscribe on mailing list
           </div>
@@ -1560,6 +1555,22 @@
         $('#carousel-text').html($('#slide-content-' + id).html());
       });
     });
+
+
+    // smooth scrool
+    $('a[href^="#"]').on('click', function (event) {
+
+      var target = $(this.getAttribute('href'));
+
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+
+    });
+
   </script>
 
   <div id="cboxOverlay" style="display: none;"></div>
