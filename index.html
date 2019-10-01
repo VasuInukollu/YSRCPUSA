@@ -87,9 +87,9 @@
         top: 30px;
       }
 
-      .left_pad {
+      /* .left_pad {
         padding-left: 0 !important
-      }
+      } */
 
       .flex-control-nav {
         display: none !important
@@ -98,11 +98,21 @@
       .view {
         margin-bottom: 10px;
       }
+
+      .no-pd-left,
+      .no-pd-right {
+        padding: 0 !important
+      }
     }
 
     @media screen and (min-width:770px) {
       .flex-control-nav {
         display: none !important
+      }
+
+      .no-pd-left,
+      .no-pd-right {
+        padding: 0 !important
       }
     }
 
@@ -137,6 +147,31 @@
     .thumbnail>img {
       width: 100%;
       height: 85px;
+    }
+
+    .no-pd-left {
+      padding-left: 0 !important
+    }
+
+    .no-pd-right {
+      padding-right: 0 !important
+    }
+
+    .bg_text {
+      background: #2c3e50;
+      box-sizing: border-box;
+      padding: 15px 25px !important;
+      text-align: justify;
+    }
+
+    .bg_text p {
+      line-height: 1.5em !important
+    }
+
+    @media screen and (min-width:1024px) {
+      .bg_text {
+        min-height: 360px;
+      }
     }
   </style>
 </head>
@@ -339,9 +374,10 @@
           <div class="col-lg-12">
             <div class="mainheadline">
               <h2>
-                SMART CITIES</h2>
+                SMART PROJECTS & INFRASTRUCTURE</h2>
               <h3>
-                Know more about smart cities and how they change the lifes of our people.
+                Know more about smart cities, electric buses, infrastructure and how they change the lifes of our
+                people.
                 <br>
               </h3>
             </div>
@@ -360,38 +396,129 @@
         <div class="col-md-12" id="slider">
           <!-- Top part of the slider -->
           <div class="row">
-            <div class="col-sm-12 col-md-6  left_pad" id="carousel-bounding-box"
-              style="padding-right:0; height: 360px; overflow: hidden;">
+            <div class="col-sm-12 col-md-12" id="carousel-bounding-box">
               <div class="carousel slide" id="myCarousel">
                 <!-- Carousel items -->
                 <div class="carousel-inner">
                   <div class="active item" data-slide-number="0">
-                    <img src="images/smart3.jpg"></div>
+                    <div class="col-lg-6 col-sm-12 no-pd-right">
+                      <img src="images/smart.jpg"></div>
+                    <div class="col-lg-6 col-sm-12 no-pd-left bg_text">
+                      <h3 style="color:#fff;">Smart Cities</h3>
+                      <p style="color:#fff;">Andhra Pradesh
+                        (AP) is
+                        rapidly urbanizing. Urban population has grown by 7 % in a decade, accounting for 30 % of state
+                        population in 2011.
+                        This figure is expected to continue to increase to over 43 % in the next 15 years, contributing
+                        to an
+                        envisioned double-digit economic growth that is fueled by urban growth and development.
+                        Ensuring growth and development requires a huge increase in energy consumption and Government of
+                        Andhra Pradesh is marching towards more and more of the Green Energy initiative programs.
+                        The primary focus areas of the state are solid and liquid waste management, clean and efficient
+                        energy
+                        generation, efficient public transport and disaster re-silience.
+                      </p>
+                    </div>
+                  </div>
 
                   <div class="item" data-slide-number="1">
-                    <img src="images/smart1.jpg"></div>
+
+                    <div class="col-lg-6 col-sm-12 no-pd-right">
+                      <img src="images/smart1.jpg"></div>
+                    <div class="col-lg-6 col-sm-12 no-pd-left bg_text">
+                      <h3 style="color:#fff;">Smart Cities</h3>
+                      <p style="color:#fff; ">Andhra Pradesh
+                        (AP) is
+                        rapidly urbanizing. Urban population has grown by 7 % in a decade, accounting for 30 % of state
+                        population in 2011.
+                        This figure is expected to continue to increase to over 43 % in the next 15 years, contributing
+                        to an
+                        envisioned double-digit economic growth that is fueled by urban growth and development.
+                        Ensuring growth and development requires a huge increase in energy consumption and Government of
+                        Andhra Pradesh is marching towards more and more of the Green Energy initiative programs.
+                        The primary focus areas of the state are solid and liquid waste management, clean and efficient
+                        energy
+                        generation, efficient public transport and disaster re-silience.
+                      </p>
+                    </div>
+                  </div>
+
 
                   <div class="item" data-slide-number="2">
-                    <img src="images/smart2.jpg"></div>
+
+                    <div class="col-lg-6 col-sm-12 no-pd-right">
+                      <img src="images/smart2.jpg"></div>
+                    <div class="col-lg-6 col-sm-12 no-pd-left bg_text">
+                      <h3 style="color:#fff;">Electric Buses</h3>
+                      <p style="color:#fff;">
+                        The government is planning to bring the APSRTC out of the red by laying emphasis on fuel saving.
+                        As a measure to save on diesel cost, it has been decided to introduce electric buses in the
+                        State.
+                        The government will send a proposal to the Centre seeking financial aid to the tune of Rs 187.5
+                        crore for introduction of electric buses out of the total cost of Rs 764 crore
+                      </p>
+                    </div>
+                  </div>
 
                   <div class="item" data-slide-number="3">
-                    <img src="images/smart4.jpg"></div>
+                    <div class="col-lg-6 col-sm-12 no-pd-right">
+                      <img src="images/smart3.jpg"></div>
+                    <div class="col-lg-6 col-sm-12 no-pd-left bg_text">
+                      <h3 style="color:#fff;">Electric Buses</h3>
+                      <p style="color:#fff;">
+                        The government is planning to bring the APSRTC out of the red by laying emphasis on fuel saving.
+                        As a measure to save on diesel cost, it has been decided to introduce electric buses in the
+                        State.
+                        The government will send a proposal to the Centre seeking financial aid to the tune of Rs 187.5
+                        crore for introduction of electric buses out of the total cost of Rs 764 crore
+                      </p>
+                    </div>
+                  </div>
+
+
 
                   <div class="item" data-slide-number="4">
-                    <img src="images/smart5.jpg"></div>
+                    <div class="col-lg-6 col-sm-12 no-pd-right">
+                      <img src="images/smart4.jpg"></div>
+
+                    <div class="col-lg-6 col-sm-12 no-pd-left bg_text">
+                      <h3 style="color:#fff;">Special Economic Zones </h3>
+                      <p style="color:#fff;">
+                        Andhra Pradesh Industrial Infrastructure Corporation (APIIC) is the agency responsible for
+                        supervision and execution of SEZs in the state.
+                        As of July 2016, the state had 19 operational SEZs across diversified sectors which include
+                        textiles and apparel, food processing, footwear and leather products, multi-product, pharma, IT
+                        SEZs, etc.
+                      </p>
+                    </div>
+                  </div>
 
                   <div class="item" data-slide-number="5">
-                    <img src="images/smart6.jpg"></div>
+                    <div class="col-lg-6 col-sm-12 no-pd-right">
+                      <img src="images/smart5.jpg"></div>
+
+                    <div class="col-lg-6 col-sm-12 no-pd-left bg_text">
+                      <h3 style="color:#fff;">Industrial Developments in AP</h3>
+                      <p style="color:#fff;">
+                        Government of Andhra Pradesh accords top priority to industrial development to make Andhra
+                        Pradesh a progressive and highly industrialized state,
+                        a State that is a centre of technology and innovation and a joyous population confident of its
+                        bright future. In this regard, extensive consultations were held with stakeholders, Industrial
+                        Associations namely Cll, FAPSIA,
+                        FAPCCI, A.P. Spinning Mills Associations, ALEAP etc. for formulation of new policy.
+                      </p>
+                    </div>
+                  </div>
 
                 </div><!-- Carousel nav -->
                 <!-- <a class="carousel-control left" data-slide="prev" href="#myCarousel">‹</a> <a class="carousel-control right" data-slide="next" href="#myCarousel">›</a> -->
               </div>
             </div>
 
-            <div class="col-sm-12 col-md-6" id="carousel-text" style="background: #2c3e50; color:#fff; padding:20px; padding-left:0px; height: 360px;
-                          overflow: hidden;"></div>
+            <!-- <div class="col-sm-12 col-md-6" id="carousel-text" style="background: #2c3e50; color:#fff; padding:20px; padding-left:0px; height: 360px;
+                          overflow: hidden;"></div> -->
 
-            <div id="slide-content" style="display: none; color:#fff">
+            <!-- <div id="slide-content" style="display: none; color:#fff">
               <div id="slide-content-0">
                 <h3 style="color:#fff; margin-left:15px; padding-left:20px;">Smart Cities</h3>
                 <p style="color:#fff; margin-left:15px;  padding-left:20px;text-align: justify; ">Andhra Pradesh (AP) is
@@ -414,7 +541,7 @@
 
 
 
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -426,7 +553,7 @@
 
           <ul class="thumbnails">
             <li class="col-sm-6 col-md-2">
-              <a class="thumbnail" id="carousel-selector-0"><img src="images/smart3.jpg"></a>
+              <a class="thumbnail" id="carousel-selector-0"><img src="images/smart.jpg"></a>
             </li>
             <li class="col-sm-6 col-md-2">
               <a class="thumbnail" id="carousel-selector-1"><img src="images/smart1.jpg"></a>
@@ -437,15 +564,15 @@
             </li>
 
             <li class="col-sm-6 col-md-2">
-              <a class="thumbnail" id="carousel-selector-3"><img src="images/smart4.jpg"></a>
+              <a class="thumbnail" id="carousel-selector-3"><img src="images/smart3.jpg"></a>
             </li>
 
             <li class="col-sm-6 col-md-2">
-              <a class="thumbnail" id="carousel-selector-4"><img src="images/smart5.jpg"></a>
+              <a class="thumbnail" id="carousel-selector-4"><img src="images/smart4.jpg"></a>
             </li>
 
             <li class="col-sm-6 col-md-2">
-              <a class="thumbnail" id="carousel-selector-5"><img src="images/smart6.jpg"></a>
+              <a class="thumbnail" id="carousel-selector-5"><img src="images/smart5.jpg"></a>
             </li>
           </ul>
         </div>
@@ -909,7 +1036,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3" style="position: absolute; left: 75%;">
+            <!-- <div class="col-md-3" style="position: absolute; left: 75%;">
               <div class="team-box">
                 <img src="images/team4.jpg" alt="">
                 <div class="team-box-inner">
@@ -925,48 +1052,31 @@
                     <a href="index.html#"><i class="fa fa-linkedin icon"></i></a>
                     <a href="index.html#"><i class="fa fa-youtube icon"></i></a>
                   </div>
+                
+                </div>
+              </div>
+            </div> -->
+            <div class="col-md-3" style="position: absolute; left: 75%;">
+              <div class="team-box">
+                <img src="images/team5.jpg" alt="">
+                <div class="team-box-inner">
+                  <div class="wrapper100percent">
+                    <h4>Anil Kumar Yadav</h4>
+                    <p>Minister of Irrigation (Water Resources) Government of Andhra Pradesh
+                    </p>
+                  </div>
+                  <div class="wrapper100percent">
+                    <a href="index.html#"><i class="fa fa-facebook icon"></i></a>
+                    <a href="index.html#"><i class="fa fa-twitter icon"></i></a>
+                    <a href="index.html#"><i class="fa fa-linkedin icon"></i></a>
+                    <a href="index.html#"><i class="fa fa-youtube icon"></i></a>
+                  </div>
                   <!-- <a class="link" href="index.html#"><i class="fa fa-external-link"></i></a> -->
                 </div>
               </div>
             </div>
-            <div class="col-md-3" style="position: absolute; left: 100%;">
-              <div class="team-box">
-                <img src="images/team1.jpg" alt="">
-                <div class="team-box-inner">
-                  <div class="wrapper100percent">
-                    <h4>John Doe</h4>
-                    <p>Political candidate
-                    </p>
-                  </div>
-                  <div class="wrapper100percent">
-                    <a href="index.html#"><i class="fa fa-facebook icon"></i></a>
-                    <a href="index.html#"><i class="fa fa-twitter icon"></i></a>
-                    <a href="index.html#"><i class="fa fa-linkedin icon"></i></a>
-                    <a href="index.html#"><i class="fa fa-youtube icon"></i></a>
-                  </div>
-                  <a class="link" href="index.html#"><i class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3" style="position: absolute; left: 125%;">
-              <div class="team-box">
-                <img src="images/team2.jpg" alt="">
-                <div class="team-box-inner">
-                  <div class="wrapper100percent">
-                    <h4>Jane Doe</h4>
-                    <p>Political candidate
-                    </p>
-                  </div>
-                  <div class="wrapper100percent">
-                    <a href="index.html#"><i class="fa fa-facebook icon"></i></a>
-                    <a href="index.html#"><i class="fa fa-twitter icon"></i></a>
-                    <a href="index.html#"><i class="fa fa-linkedin icon"></i></a>
-                    <a href="index.html#"><i class="fa fa-youtube icon"></i></a>
-                  </div>
-                  <a class="link" href="index.html#"><i class="fa fa-external-link"></i></a>
-                </div>
-              </div>
-            </div>
+
+
           </div>
         </div><button class="flickity-prev-next-button previous" type="button" aria-label="previous"><svg
             viewBox="0 0 100 100">
@@ -1516,10 +1626,10 @@
 
 
       // When the carousel slides, auto update the text
-      $('#myCarousel').on('slid', function (e) {
-        var id = $('.item.active').data('slide-number');
-        $('#carousel-text').html($('#slide-content-' + id).html());
-      });
+      // $('#myCarousel').on('slid', function (e) {
+      //   var id = $('.item.active').data('slide-number');
+      //   $('#carousel-text').html($('#slide-content-' + id).html());
+      // });
     });
 
 
