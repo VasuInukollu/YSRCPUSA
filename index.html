@@ -39,8 +39,8 @@
     }
 
     .ap_logo {
-      width: 100px;
-     margin-top: -25px;
+      width: 90px;
+      margin-top: -20px;
     }
 
     .logo_text {
@@ -48,7 +48,7 @@
       font-size: 34px;
       position: absolute;
       top: 41px;
-      left: 10px;
+      left: 110px;
       font-weight: 300;
     }
 
@@ -58,6 +58,12 @@
     }
 
     @media screen and (max-width:640px) {
+      .navbar-toggle {
+        position: absolute;
+        top: -98px;
+        right: 15px;
+      }
+
       .ap_logo {
         font-size: 18px;
         position: absolute;
@@ -71,17 +77,30 @@
         font-size: 17px;
         position: absolute;
         top: 41px;
-        left: 65px;
+        left: 94px;
         font-weight: 300;
       }
 
       .view {
         margin-bottom: 10px;
       }
-      .btm_info{height: 500px !important;}
-      .testimonials{padding: 0 !important}
-      .blog-box {height:auto !important;}
-      .no-pad{padding:0 !important;}
+
+      .btm_info {
+        height: 500px !important;
+      }
+
+      .testimonials {
+        padding: 0 !important
+      }
+
+      .blog-box {
+        height: auto !important;
+      }
+
+      .no-pad {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
     }
 
     body {
@@ -118,8 +137,11 @@
       .no-pd-right {
         padding: 0 !important
       }
-      .blog-box {height:auto !important;}
-     
+
+      .blog-box {
+        height: auto !important;
+      }
+
     }
 
     @media screen and (min-width:768px) {
@@ -131,9 +153,18 @@
       .no-pd-right {
         padding: 0 !important
       }
-      .btm_info{height:260px !important;}
-      .testimonials{padding: 0 !important}
-      .blog-box {height:auto !important;}
+
+      .btm_info {
+        height: 260px !important;
+      }
+
+      .testimonials {
+        padding: 0 !important
+      }
+
+      .blog-box {
+        height: auto !important;
+      }
     }
 
     @media screen and (max-width:900px) {
@@ -143,23 +174,36 @@
         max-width: 175px;
         overflow: auto;
       }
+
+
       .blog-box {
-    padding: 40px 15px;
-    .blog-box {height:auto !important;}
-    overflow: auto !important;
-}
+        height: auto !important;
+      }
+
     }
 
     @media screen and (min-width:900px) {
       .view {
         height: 106px !important;
       }
-      .blog-box {height:auto !important;}
+
+      .blog-box {
+        height: auto !important;
+      }
+
+      .logo_text {
+        color: #c0392b;
+        font-size: 25px;
+        position: absolute;
+        top: 39px;
+        left: 95px;
+        font-weight: 300;
+      }
     }
 
-   
+
     .navaratnalu li {
-     
+
       list-style-type: disc !important;
       margin-left: 15px;
       font-size: 13px;
@@ -194,16 +238,48 @@
       .bg_text {
         min-height: 360px;
       }
-      .btm_info{height:190px !important;}
-      .testimonials{padding: 0 !important}
-      .blog-box {height:382px !important;}
+
+      .btm_info {
+        height: 190px !important;
+      }
+
+      .testimonials {
+        padding: 0 !important
+      }
+
+      .blog-box {
+        height: 382px !important;
+      }
     }
-    .btm_info{height: 190px;}
-    .testimonials{padding: 25px 0px; }
-    .testimonial img{margin-right: 36px;}
-    .blog-box { padding: 20px 15px; height:auto;}
-    .blog-box .meta { margin-bottom: 0px;}
-    .blog-box h4{margin-top: 0px;}
+
+    .btm_info {
+      height: 190px;
+    }
+
+    .testimonials {
+      padding: 25px 0px;
+    }
+
+    .testimonial img {
+      margin-right: 36px;
+    }
+
+    .blog-box {
+      padding: 20px 15px;
+      height: auto;
+    }
+
+    .blog-box .meta {
+      margin-bottom: 0px;
+    }
+
+    .blog-box h4 {
+      margin-top: 0px;
+    }
+
+    .logo2 {
+      width: 100px;
+    }
   </style>
 </head>
 
@@ -222,7 +298,8 @@
             </div>
             <div class="col-lg-6 topright">
               <a href="#"><i class="fa fa-phone"> <span>+18607784210</span></i></a>
-              <a href="mailto:pr-apspecialreptousa@ap.gov.in"><i class="fa fa-envelope last"> <span> pr-apspecialreptousa@ap.gov.in</span></i></a>
+              <a href="mailto:pr-apspecialreptousa@ap.gov.in"><i class="fa fa-envelope last"> <span>
+                    pr-apspecialreptousa@ap.gov.in</span></i></a>
             </div>
           </div>
         </div>
@@ -234,9 +311,11 @@
             <div class="col-lg-12">
               <div class="responsive-wrapper">
                 <a class="navbar-brand" href="#">
+                  <img src="images/aplogo.png" alt="" class="ap_logo">
+                  <span class="logo_text"> &nbsp; Spl. Rep. to North America
+                  </span>
 
-                  <img src="images/apgsrna-logo.jpg" alt="" class="ap_logo">
-                  
+
                 </a>
                 <div id="toggle-icon" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                   <span></span>
@@ -252,6 +331,7 @@
                     <li><a href="#events">Events</a></li>
                     <li><a href="#news">News</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li> <img src="images/apgsrna-logo.jpg" alt="" class="logo2 hidden-xs hidden-sm"></li>
                   </ul>
                 </div>
               </div>
@@ -1169,7 +1249,7 @@
       </div>
       <div class="col-md-2">
         <figure class="view view-first">
-          <img src="images/gallery/g2.jpg" alt="">
+          <img src="images/gallery/g2.jpg" alt="" style="width:120%">
           <figcaption class="mask">
             <div class="maskinner">
               <a href="images/gallery/g2.jpg" class="imagepopup cboxElement">
@@ -1561,7 +1641,7 @@
           <h5>CONTACT INFO</h5>
           <ul>
             <li>
-              Address: 200 Galstonbury blvd, sute 304 Galstonbury, CT-06033
+              Address: 200 Glastonbury blvd, sute 304 Glastonbury, CT-06033
             </li>
             <li>
               United States of America
