@@ -78,7 +78,9 @@
       .view {
         margin-bottom: 10px;
       }
-
+      .btm_info{height: 500px !important;}
+      .testimonials{padding: 0 !important}
+      .blog-box{overflow:auto !important}
     }
 
     body {
@@ -94,7 +96,7 @@
       top: 256px;
     }
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:767px) {
       .ban_cont {
         top: 30px;
       }
@@ -115,9 +117,10 @@
       .no-pd-right {
         padding: 0 !important
       }
+     
     }
 
-    @media screen and (min-width:770px) {
+    @media screen and (min-width:768px) {
       .flex-control-nav {
         display: none !important
       }
@@ -126,6 +129,8 @@
       .no-pd-right {
         padding: 0 !important
       }
+      .btm_info{height:260px !important;}
+      .testimonials{padding: 0 !important}
     }
 
     @media screen and (max-width:900px) {
@@ -135,6 +140,11 @@
         max-width: 175px;
         overflow: auto;
       }
+      .blog-box {
+    padding: 40px 15px;
+    height: 280px !important;
+    overflow: auto !important;
+}
     }
 
     @media screen and (min-width:900px) {
@@ -145,14 +155,15 @@
 
     .blog-box {
       padding: 40px 15px;
-      height: 482px;
+      height: 382px;
       overflow: hidden;
     }
 
     .navaratnalu li {
-      margin: 15px 0;
+     
       list-style-type: disc !important;
       margin-left: 15px;
+      font-size: 13px;
     }
 
     .thumbnail a>img,
@@ -184,7 +195,15 @@
       .bg_text {
         min-height: 360px;
       }
+      .btm_info{height:190px !important;}
+      .testimonials{padding: 0 !important}
     }
+    .btm_info{height: 190px;}
+    .testimonials{padding: 25px 0px; }
+    .testimonial img{margin-right: 36px;}
+    .blog-box { padding: 20px 15px; }
+    .blog-box .meta { margin-bottom: 0px;}
+    .blog-box h4{margin-top: 0px;}
   </style>
 </head>
 
@@ -1353,13 +1372,13 @@
           <!-- one testimonial -->
 
           <!-- one testimonial end -->
-          <div class="flickity-viewport" style="height: 190px;">
+          <div class="flickity-viewport btm_info">
             <div class="flickity-slider">
               <div class="col-md-12 testimonials">
                 <div class="testimonialsinner">
                   <div class="testimonial">
                     <img src="images/rtnkar1.jpg" alt="">
-                    <i class="fa fa-quote-left"></i>
+                    <i class="fa fa-quote-left pull-left"></i>
                     <h4> My sincere thanks to our Honourable Chief Minister. Sri Y.S Jagan Mohan Reddy garu, No words to
                       express My Love on
                       you ,No matter what, Till my Final Breath I wil be your Supporter and I'm proud of it! Once Again
